@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="formulario">
+        <div class="forms">
+            <form method="post" action="index.html">
+            <div class="quadrado">
+            <label for="nome"> Nome Completo </label><br> 
+            <input type="text" id="nome" required placeholder="Digite seu nome completo">
+            </div> 
+
+            <div class="quadrado">
+            <label for="cpf"> CPF </label> <br>
+            <input type="number" id="cpf" required placeholder="xxx.xxx.xxx.xx" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"> 
+            </div> 
+
+            <div class="quadrado">
+            <label for="data"> Data de nascimento </label><br> 
+            <input type="date" id="data" required>
+            </div>  
+
+            <div class="quadrado">
+            <label for="email"> E-mail </label> <br>
+            <input type="email" id="email" required placeholder="exemplo@hotmail.com"> 
+            </div> 
+
+            <div class="quadrado">
+            <label for="telefone"> Número de telefone: </label><br> 
+            <input type="number" id="telefone" required placeholder="(xx)xxxxx-xxxx" pattern="\(\d{2}\) \d{4,5}-\d{4}"> 
+            </div> 
+
+
+            <div class="quadrado">
+            <label for="assunto"> Assunto </label> <br>
+            <input type="checkbox" id="assunto"> <label>Leis ambientais</label> <br> 
+            <input type="checkbox" id="assunto"> <label>Notícias do meio ambiente</label> <br>
+            <input type="checkbox" id="assunto"> <label>Florestas pelo mundo</label> <br>
+            </div> 
+            
+
+            <div class="quadrado">
+            <label for="msg"> Mensagem </label> <br>
+            <input type="text" id="msg" required placeholder="Digite uma mensagens para nos"> 
+            </div> 
+            
+            <div class="quadrado">
+            <label for="term"> Termos </label> <br>
+            <label>Todos os dados recolhidos aqui serão usados pelos chineses</label><br>
+            <input type="radio" id="escolha" required><label>Concordo com os termos</label><br>
+            <input type="radio" id="escolha"><label>Discordo dos termos</label>
+            </div> 
+
+            <button id="enviar" type="submit"> Enviar </button>
+            <button id="limpar" type="reset"> Limpar</button>
+            </form>
+        </div>
+</body>
+</html>
